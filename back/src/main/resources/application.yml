@@ -1,6 +1,15 @@
 spring:
   application:
     name: toy_back_end
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://db:3306/memo_db
+    username: memo_user
+    password: memo_pass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 server:
   port: 8080
