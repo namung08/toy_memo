@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: toy_back_end
+
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
