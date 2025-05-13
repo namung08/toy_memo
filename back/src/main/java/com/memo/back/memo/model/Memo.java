@@ -1,5 +1,6 @@
 package com.memo.back.memo.model;
 
+import com.memo.back.web.dto.memo.MemoRequestDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +30,13 @@ public class Memo {
   @Column(nullable = false)
   private LocalDateTime updatedAt;
 
+  public Memo(MemoRequestDTO memoRequestDTO) {
+    this.title = memoRequestDTO.title();
+    this.content = memoRequestDTO.content();
+  }
+
+  public Memo() {}
+
   // 엔티티가 처음 저장되기 전에 호출됩니다.
   @PrePersist
   public void prePersist() {
@@ -52,5 +60,10 @@ public class Memo {
   @Override
   public int hashCode() {
     return Objects.hashCode(getId());
+  }
+
+  @Override
+  public String toString() {
+    return "Memo{id=" + id + ", title='" + title + '\'' + ", content='" + content + '\'' + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
   }
 }
