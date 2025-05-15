@@ -5,7 +5,7 @@ services:
     image: mariadb:latest
     container_name: my-mariadb
     ports:
-      - "3306:3306"
+      - "3307:3306"
     environment:
       - MARIADB_ROOT_PASSWORD=1234
       - MARIADB_DATABASE=memo_db
