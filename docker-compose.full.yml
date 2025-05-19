@@ -5,7 +5,7 @@ services:
     image: mariadb:latest
     container_name: memo-db
     ports:
-      - "3307:3307"
+      - "3307:3306"
     environment:
       MARIADB_ROOT_PASSWORD: 1234
       MARIADB_DATABASE: memo_db
@@ -24,21 +24,19 @@ services:
       - "8080:8080"
     depends_on:
       - db
+      - frontend_builder
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3307/memo_db
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/memo_db
       SPRING_DATASOURCE_USERNAME: memo_user
       SPRING_DATASOURCE_PASSWORD: memo_pass
     networks:
       - memo-network
 
-  frontend:
+  frontend_builder:
     build:
       context: ./front
-    container_name: memo-frontend
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
+      target: final
+    container_name: memo-frontend-builder
     networks:
       - memo-network
 
