@@ -14,7 +14,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/memo")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173") // Vite 기본 포트
 public class MemoController {
   private final MemoService service;
 
