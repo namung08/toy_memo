@@ -1,129 +1,124 @@
-# 📝 Memo Web Application
-
-Spring Boot + React (Vite + TypeScript) 기반의 간단한 메모 웹 애플리케이션입니다. MariaDB를 사용하며, Docker를 통해 로컬 환경에서 손쉽게 실행할 수 있습니다.
+# Memo Web Application <img src="img/memo-icon.png" alt="" width="30">
 
 ---
 
-## 🗂 프로젝트 구조
+- 이 프로젝트는 **Spring Boot와 React(Vite + TypeScript)**를 활용한 현대적인 메모 웹 애플리케이션입니다.
 
-```
-memo/
-├── back/        # Spring Boot 백엔드 (Gradle)
-├── front/       # Vite + React + TypeScript 프론트엔드
-├── docker-compose.db.yml  # DB만 실행할 때 사용하는 Docker Compose
-└── docker-compose.full.yml  # 전체 시스템(DB + 백엔드 + 프론트엔드 빌더) 실행용 Docker Compose
-```
+<h1>Modern Memo Web Application using Spring Boot and React v1.0</h1>
 
 ---
 
-## 🚀 실행 방법
+> **SeSAC**  
+> **개발기간 : 2025.05.13 - 2025.05.19**
 
-### **Docker Compose를 통한 실행**
+# 개발자 <img src="img/developer-icon.png" alt="" width="30">
 
-Docker Compose를 사용하여 전체 또는 일부 서비스를 컨테이너 환경에서 실행하는 방법입니다.
+---
 
-#### 1️⃣ **DB만 실행 (docker-compose.db.yml)**
+|                              **이상준**                               |
+| :-------------------------------------------------------------------: |
+| ![profile.png](https://avatars.githubusercontent.com/u/113490780?v=4) |
+|               [@namung08](https://github.com/namung08)                |
+|                    안산대학교 컴퓨터 정보학과 졸업                    |
 
-DB만 실행하려면 아래 명령어를 사용하세요:
+# 프로젝트 소개 <img src="img/info-icon.png" alt="" width="30">
+
+---
+
+- **메모 관리** : 사용자가 일상적인 메모를 효율적으로 관리할 수 있는 기능을 제공합니다.
+- **상태 관리** : 메모의 작성/수정 상태를 쉽게 관리할 수 있습니다.
+- **데이터 저장** : MariaDB를 활용하여 사용자의 메모 데이터를 안전하게 저장합니다.
+- **반응형 디자인** : 모든 디바이스에서 최적화된 사용자 경험을 제공합니다.
+- **컨테이너화** : Docker Compose를 활용하여 개발 및 배포 환경을 컨테이너화했습니다.
+- **Cursor 활용** : Cursor를 통해 프론트엔드 페이지 및 Docker 설정을 구성했습니다.
+- **배포 최적화** : 초기 Nginx 배포 시도 및 CORS 문제 해결 과정을 통해 실제 운영 환경에서 발생할 수 있는 문제를 해결했습니다.
+
+# 시작 가이드 <img src="img/guide-icon.png" alt="" width="30">
+
+---
+
+- **프로그래밍 언어** : [Java](https://www.java.com/), [TypeScript](https://www.typescriptlang.org/)
+- **프레임워크** : [Spring Boot](https://spring.io/projects/spring-boot), [React 19](https://react.dev/)
+- **빌드 도구** : [Maven](https://maven.apache.org/), [Vite](https://vitejs.dev/)
+- **패키지 매니저** : [npm](https://www.npmjs.com/)
+- **데이터베이스** : [MariaDB](https://mariadb.org/)
+- **컨테이너화** : [Docker](https://www.docker.com/), [Docker Compose](https://docs.docker.com/compose/)
+- **사용 툴** : [VS Code](https://code.visualstudio.com/), [Cursor](https://cursor.sh/)
 
 ```bash
-docker-compose -f docker-compose.db.yml up -d
+git clone https://github.com/namung08/memo_web_application.git
+cd memo_web_application
+docker-compose up -d
 ```
 
-* **MariaDB에 로컬에서 접속 시**:
-
-    * Host: `localhost`
-    * Port: `3306`
-    * User: `memo_user`
-    * Password: `memo_pass`
-    * Database: `memo_db`
-
-DB만 실행하는 경우, 다른 서비스들은 별도로 실행할 필요가 없습니다.
-
-#### 2️⃣ **전체 서비스 실행 (docker-compose.full.yml)**
-
-전체 시스템(DB + 백엔드 + 프론트엔드)을 실행하려면 아래 명령어를 사용하세요:
-
-```bash
-docker-compose -f docker-compose.full.yml up --build -d --force-recreate
-```
-
-이 명령어는 DB, 백엔드, 프론트엔드 빌더를 빌드하고 실행하며, 백엔드에서 프론트엔드 정적 파일을 서빙합니다.
-
-* **백엔드 및 프론트엔드**: [http://localhost:8080](http://localhost:8080)
+# 기술 스택 📚
 
 ---
 
-### **로컬에서 각각 실행**
+<div align=center> 
+<h3>Environment</h3>
+    <img src="https://img.shields.io/badge/VS Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
+    <img src="https://img.shields.io/badge/Cursor-00A8E8?style=for-the-badge&logo=Cursor&logoColor=white">
+<h3>Config</h3>
+<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=Apache Maven&logoColor=white">
+<h3>Development</h3>
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white">
+<h3>Database</h3>
+<img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white">
+<h3>Container</h3>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
+<img src="https://img.shields.io/badge/Docker Compose-2496ED?style=for-the-badge&logo=Docker Compose&logoColor=white">
+<h3>Communication </h3>
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+</div>
 
-Docker 없이 로컬 환경에서 백엔드와 프론트엔드를 개별적으로 실행하는 방법입니다. DB는 Docker Compose 또는 로컬 설치된 DB를 사용합니다.
-
-#### 📦 백엔드 빌드 및 실행 (로컬 수동)
-
-백엔드를 로컬에서 빌드하고 실행하려면 아래 명령어를 사용하세요:
-
-```bash
-cd back
-./gradlew build
-./gradlew bootRun
-```
-(참고: 로컬 실행 시 application.yml의 데이터소스 설정(localhost:3306 등)을 확인하세요.)
-
-#### 🛠 프론트 개발 실행 (로컬 수동)
-
-프론트를 로컬 개발 모드로 실행하려면 아래 명령어를 사용하세요:
-
-```bash
-cd front
-npm install
-npm run dev
-```
-(주의: 로컬 프론트 개발 시에는 백엔드 서버가 별도로 실행되어 있어야 합니다. 백엔드는 로컬에서 실행하거나 Docker Compose로 DB/백엔드만 실행하여 연결할 수 있습니다.)
+# 화면 구성 <img src="img/screen-icon.png" alt="" width="30">
 
 ---
 
-## ⚙ 환경 변수
+| **메인 화면**             | **메모 작성**               |**메모 수정**             |
+| ------------------------- | --------------------------- |------------------------- |
+| ![main.png](img/main.png) | ![write.png](img/write.png) | ![edit.png](img/edit.png) |
 
-`application.yml` 혹은 Docker 환경 변수로 다음이 설정됩니다:
 
-```yaml
-spring.datasource.url=jdbc:mysql://db:3306/memo_db
-spring.datasource.username=memo_user
-spring.datasource.password=memo_pass
-```
 
----
 
-## 🧼 정리 및 종료
 
-실행된 Docker 서비스를 종료하려면 아래 명령어를 실행하세요:
-
-```bash
-docker-compose -f docker-compose.full.yml down
-```
-
-DB만 종료하려면:
-
-```bash
-docker-compose -f docker-compose.db.yml down
-```
+# 주요 기능 <img src="img/feature-icon.png" alt="" width="30">
 
 ---
 
-## ✅ TODO
+## ⭐️ 메모 관리 기능
 
-* [ ] 로그인 기능 추가
-* [ ] DockerHub 이미지 배포
-* [ ] CI/CD 구성
+- 새로운 메모 작성
+- 기존 메모 수정
+- 메모 삭제
+
+## ⭐️ 상태 관리 기능
+
+- 메모 작성/수정 상태 관리
+- 진행 상태에 따른 시각적 표시
+
+## ⭐️ 데이터 저장 기능
+
+- MariaDB를 활용한 데이터 영구 저장
+- 페이지 새로고침 시에도 데이터 유지
+
+## ⭐️ 컨테이너화 기능
+
+- Docker Compose를 활용한 개발 및 배포 환경 컨테이너화
+- Cursor를 통한 프론트엔드 페이지 및 Docker 설정 구성
+
+## ⭐️ 배포 최적화 기능
+
+- 초기 Nginx 배포 시도 및 CORS 문제 해결
+- React 페이지를 정적 파일로 빌드하여 Spring Boot 애플리케이션에서 서빙
+
+# 프로젝트 구조 <img src="img/structure-icon.png" alt="" width="30">
 
 ---
-
-## 🧑‍💻 만든 사람
-
-* 이상준 (백엔드 개발자)
-
----
-## 📅 프로젝트 기간
-
-> 시작: 2025-05-13
-> 완료: 2025-05-19
