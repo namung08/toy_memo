@@ -55,26 +55,39 @@ docker-compose up -d
 
 ---
 
-<div align=center> 
-<h3>Environment</h3>
-    <img src="https://img.shields.io/badge/VS Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
-    <img src="https://img.shields.io/badge/Cursor-00A8E8?style=for-the-badge&logo=Cursor&logoColor=white">
-<h3>Config</h3>
-<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
-<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=Apache Maven&logoColor=white">
-<h3>Development</h3>
-<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white">
-<h3>Database</h3>
-<img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white">
-<h3>Container</h3>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
-<img src="https://img.shields.io/badge/Docker Compose-2496ED?style=for-the-badge&logo=Docker Compose&logoColor=white">
-<h3>Communication </h3>
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<div align="center">
+
+### Environment
+
+<img src="https://img.shields.io/badge/VS Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cursor-00A8E8?style=flat-square&logo=Cursor&logoColor=white"/>
+
+### Config
+
+<img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white"/>
+<img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=Apache Maven&logoColor=white"/>
+
+### Development
+
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/>
+
+### Database
+
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white"/>
+
+### Container
+
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker Compose-2496ED?style=flat-square&logo=Docker Compose&logoColor=white"/>
+
+### Communication
+
+<img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"/>
+
 </div>
 
 # 화면 구성 <img src="img/screen-icon.png" alt="" width="30">
@@ -118,7 +131,8 @@ docker-compose up -d
 # 프로젝트 구조 <img src="img/structure-icon.png" alt="" width="30">
 
 ---
-```text
+
+````text
 
 Ctrl+K to generate a command
 # Todo List <img src="img/todo-icon.png" alt="" width="30">
@@ -131,7 +145,7 @@ Ctrl+K to generate a command
 
 ---
 
-> **SeSAC**  
+> **SeSAC**
 > **개발기간 : 2025.04.25**
 
 # 개발자 <img src="img/developer-icon.png" alt="" width="30">
@@ -168,24 +182,35 @@ git clone https://github.com/namung08/todo_list.git
 cd todo_list
 npm install
 npm run dev
-```
+````
 
 # 기술 스택 📚
 
 ---
 
-<div align=center> 
-<h3>Environment</h3>
-    <img src="https://img.shields.io/badge/VS Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
-<h3>Config</h3>
-<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
-<h3>Development</h3>
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white">
-<h3>Communication </h3>
-<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<div align="center">
+
+### Environment
+
+<img src="https://img.shields.io/badge/VS Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cursor-00A8E8?style=flat-square&logo=Cursor&logoColor=white"/>
+
+### Config
+
+<img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white"/>
+<img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=Apache Maven&logoColor=white"/>
+
+### Development
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/>
+
+### Communication
+
+<img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"/>
+
 </div>
 
 # 화면 구성 <img src="img/screen-icon.png" alt="" width="30">
